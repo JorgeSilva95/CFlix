@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://www.imdb.com",
+  baseURL: "https://api.themoviedb.org/3/movie/",
 });
 
 api.interceptors.request.use(async (config) => {
-  const token = "AKIAYE35ABDJPUELNZ7A";
+  const token = "e68b6243bee88c674c06b447bb15c094";
   if (token) {
     api.defaults.headers.authorization = `Bearer ${token}`;
   }

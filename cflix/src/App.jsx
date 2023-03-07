@@ -1,27 +1,25 @@
 import "./Styls/App.css";
-import TopFilmInfs from "./Components/TopFilmInfs";
 import api from "./Api/api";
 import { useState, useEffect } from "react";
 
 function App(props) {
-  const [Film, setFilm] = useState();
+  const [Film, setFilm] = useState(String);
+  const [IDFilmSearch, setIDFilmSearch] = useState(505);
 
   useEffect(() => {
     api
-      .get("/title/tt1856010/")
+      .get(IDFilmSearch + "?api_key=e68b6243bee88c674c06b447bb15c094")
       .then((response) => setFilm(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
   }, []);
 
-  const { cardls } = props;
-  console.log(Film);
+  console.log(Film.title);
   return (
     <div className="App">
       <div>Filme</div>
-      <div>{Film}</div>
-      <TopFilmInfs card={cardls} />
+      <div>{Film.title}</div>
     </div>
   );
 }
