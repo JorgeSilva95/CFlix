@@ -1,5 +1,6 @@
 import "./Styls/App.css";
 import api from "./Api/api";
+import Header from "./Components/Header";
 import { useState, useEffect } from "react";
 
 function App(props) {
@@ -18,6 +19,7 @@ function App(props) {
   console.log(Film.title);
   return (
     <div className="App">
+      <Header></Header>
       <div>Filme</div>
       <div>{Film.title}</div>
     </div>
