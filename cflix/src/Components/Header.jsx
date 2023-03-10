@@ -1,21 +1,44 @@
 import { useState, useEffect } from "react";
 import "../Styls/Header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
   return (
     <div className="cbHeader">
       <h1 className="logo">CLFLIX</h1>
-      <ul className="cbList">Inicio</ul>
-      <ul className="cbList">Séries</ul>
-      <ul className="cbList">Filmes</ul>
-      <ul className="cbList">Bombando</ul>
-      <ul className="cbList">Minha Lista</ul>
-      <ul className="cbList">Navegar por idiomas</ul>
+      <ul className="cbList">
+        <a href="">Inicio</a>
+      </ul>
+      <ul className="cbList">
+        <a href="">Séries</a>
+      </ul>
+
+      <ul className="cbList">
+        <a href="">Filmes</a>
+      </ul>
+
+      <ul className="cbList">
+        <a href="">Bombando</a>
+      </ul>
+
+      <ul className="cbList">
+        <a href="">Minha Lista</a>
+      </ul>
+
+      <ul className="cbList">
+        <a href="">Navegar por idiomas</a>
+      </ul>
+
       <div className="cbListRgt">
         <input className="cbListRgt" type="text" />
-        <ul className="cbListRgt">Infantil</ul>
-        <ul className="cbListRgt">Avisos</ul>
-        <ul className="cbListRgt">Perfil</ul>
+        <a href="">Busca</a>
+        <ul className="cbListRgt">
+          <a href="">Infantil</a>
+        </ul>
+
+        <ul className="cbListRgt">
+          <a href="">Avisos</a>
+        </ul>
       </div>
     </div>
   );

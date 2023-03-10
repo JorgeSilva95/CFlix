@@ -1,14 +1,19 @@
 :root {
   --cinz-25: #141414;
+  --cinz-500: #7c7c7c;
   --red-100: #ca0000;
   --whit-0: rgb(255, 255, 255);
+}
+
+.bg-light {
+  background-color: red;
 }
 
 .cbHeader {
   background-color: var(--cinz-25);
   height: 66px;
   display: flex;
-  width: 85, 5rem;
+  width: 85em;
 }
 
 .logo {
@@ -33,4 +38,18 @@
   left: 7rem;
   position: relative;
   align-items: center;
+}
+
+a,
+a:link,
+a:visited {
+  transition: 0.2s;
+  color: var(--whit-0) !important;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--cinz-500) !important;
+  text-decoration: none;
 }

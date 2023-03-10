@@ -2,10 +2,12 @@ import "./Styls/App.css";
 import api from "./Api/api";
 import Header from "./Components/Header";
 import { useState, useEffect } from "react";
+import HeaderRes from "./Components/HeaderRes.jsx";
+import Scop from "./Components/Scop.jsx";
 
 function App(props) {
   const [Film, setFilm] = useState(String);
-  const [IDFilmSearch, setIDFilmSearch] = useState(505);
+  const [IDFilmSearch, setIDFilmSearch] = useState(2525);
 
   useEffect(() => {
     api
@@ -20,8 +22,11 @@ function App(props) {
   return (
     <div className="App">
       <Header></Header>
-      <div>Filme</div>
-      <div>{Film.title}</div>
+      <Scop
+        Films={Film.title}
+        poster_path={Film.poster_path}
+        detalhs={Film.overview}
+      />
     </div>
   );
 }
