@@ -1,0 +1,23 @@
+:root {
+  --cinz-200: #e6e6e6;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--cinz-200);
+}
+
+.cardInfFil {
+  width: 30rem;
+  background-color: red;
+}
+
+.IMGBackGround {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+}
+
+.CardFilm {
+  display: flex;
+}

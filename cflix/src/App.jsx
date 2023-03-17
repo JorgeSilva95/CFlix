@@ -17,16 +17,12 @@ function App(props) {
         console.error("ops! ocorreu um erro" + err);
       });
   }, []);
-
-  console.log(Film.title);
+  /* 
+  console.log(Film.title); */
   return (
     <div className="App">
       <Header></Header>
-      <Scop
-        Films={Film.title}
-        poster_path={Film.poster_path}
-        detalhs={Film.overview}
-      />
+      <Scop Film={Film} />
     </div>
   );
 }
