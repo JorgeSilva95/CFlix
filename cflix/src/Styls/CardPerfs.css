@@ -1,0 +1,11 @@
+:root {
+  --with-0: white;
+}
+
+.cardPerfs {
+  text-align: center;
+}
+
+.cardPerfs > h1 {
+  color: var(--with-0);
+}

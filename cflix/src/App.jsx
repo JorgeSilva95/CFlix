@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import { useState, useEffect } from "react";
 import HeaderRes from "./Components/HeaderRes.jsx";
 import Scop from "./Components/Scop.jsx";
+import Login from "./Pages/Login.jsx";
 
 function App(props) {
   const [Film, setFilm] = useState(String);
@@ -21,8 +22,8 @@ function App(props) {
   console.log(Film.title); */
   return (
     <div className="App">
-      <Header></Header>
-      <Scop Film={Film} />
+      {/* <Scop Film={Film} /> */}
+      <Login />
     </div>
   );
 }

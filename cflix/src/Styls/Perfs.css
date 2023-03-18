@@ -1,0 +1,39 @@
+:root {
+  --with-100: #e5e5e5;
+  --cinz-10: #515151;
+}
+
+.perfCard {
+}
+
+.perfCard > button > img {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.perfCard > button {
+  width: 15%;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.perfCard > button:hover > p {
+  border-width: 3px;
+  color: var(--with-100);
+}
+
+p {
+  color: var(--cinz-10);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.perfCard > button:hover > img {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--with-100);
+}

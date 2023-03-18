@@ -13,7 +13,7 @@
   background-color: var(--cinz-25);
   height: 66px;
   display: flex;
-  width: 85em;
+  width: 100%;
 }
 
 .logo {
@@ -35,7 +35,7 @@
 .cbListRgt {
   color: var(--whit-0);
   display: flex;
-  left: 7rem;
+  /* left: 7rem; */
   position: relative;
   align-items: center;
 }
