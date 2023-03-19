@@ -3,17 +3,32 @@
   --cinz-10: #515151;
 }
 
+.cardPerfs {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .perfCard {
+  padding: 10px;
 }
 
 .perfCard > button > img {
   width: 100%;
   border-radius: 5px;
   position: relative;
+  border-style: solid;
+  border-width: 3px;
+  border-color: transparent;
 }
 
 .perfCard > button {
-  width: 15%;
+  /* width: 15%; */
+  width: 100%;
   border-radius: 8px;
   margin: 0px;
   padding: 0px;
@@ -21,19 +36,24 @@
   background-color: transparent;
 }
 
+.perfCard > button:hover > img {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--with-100);
+  border-width: 3px;
+}
+
 .perfCard > button:hover > p {
   border-width: 3px;
   color: var(--with-100);
+}
+
+.perfCard > button > p {
+  margin: 0px;
 }
 
 p {
   color: var(--cinz-10);
   font-weight: 400;
   font-size: 18px;
-}
-
-.perfCard > button:hover > img {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: var(--with-100);
 }

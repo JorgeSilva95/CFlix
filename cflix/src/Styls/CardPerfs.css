@@ -9,3 +9,8 @@
 .cardPerfs > h1 {
   color: var(--with-0);
 }
+
+.perfsContainer {
+  display: flex;
+  justify-content: center;
+}
