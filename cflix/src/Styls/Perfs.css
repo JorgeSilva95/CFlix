@@ -1,6 +1,7 @@
 :root {
   --with-100: #e5e5e5;
   --cinz-10: #515151;
+  --cinz-20: #666666;
 }
 
 .cardPerfs {
@@ -19,7 +20,7 @@
 
 .perfCard > button > img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   border-style: solid;
   border-width: 3px;
@@ -38,7 +39,6 @@
 
 .perfCard > button:hover > img {
   border-style: solid;
-  border-radius: 5px;
   border-color: var(--with-100);
   border-width: 3px;
 }
@@ -52,6 +52,7 @@
   margin: 0px;
 }
 
+.lockIcon,
 p {
   color: var(--cinz-10);
   font-weight: 400;

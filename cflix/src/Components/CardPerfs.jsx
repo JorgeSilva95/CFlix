@@ -9,10 +9,8 @@ function CardPerfs() {
         <Perfs />
         <Perfs />
         <Perfs />
-        <Perfs />
-        <Perfs />
-        <Perfs />
       </div>
+      <button className="btnPadrao">Gerenciar perfis</button>
     </div>
   );
 }
