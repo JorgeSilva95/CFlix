@@ -26,6 +26,7 @@
   color: var(--cinz-20);
   background-color: transparent;
   border-color: var(--cinz-10);
+  padding: 5px 26px;
 }
 
 .btnPadrao:hover {
