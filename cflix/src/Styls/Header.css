@@ -4,10 +4,10 @@
   --red-100: #ca0000;
   --whit-0: rgb(255, 255, 255);
 }
-
+/* 
 .bg-light {
   background-color: red;
-}
+} */
 
 .cbHeader {
   background-color: var(--cinz-25);
@@ -24,20 +24,31 @@
   padding-right: 40px;
 }
 
+.primaryNavigation {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.secondaryNavigation {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
 .cbList {
-  margin: 0;
   color: var(--whit-0);
-  padding-top: 24px;
-  padding-left: 20px;
-  font-size: 14px;
+  padding: 0px;
+  margin: 0.4rem;
+  height: 1.2rem;
 }
 
 .cbListRgt {
   color: var(--whit-0);
-  display: flex;
-  /* left: 7rem; */
-  position: relative;
-  align-items: center;
+  padding: 0px;
+  margin: 0.6rem;
+  height: 1.2rem;
 }
 
 a,
@@ -52,4 +63,14 @@ a:hover,
 a:active {
   color: var(--cinz-500) !important;
   text-decoration: none;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+}
+
+.btns {
+  width: 1.5rem;
+  height: 1.5rem;
 }

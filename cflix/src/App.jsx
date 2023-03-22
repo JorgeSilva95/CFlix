@@ -22,8 +22,9 @@ function App(props) {
   console.log(Film.title); */
   return (
     <div className="App">
-      {/* <Scop Film={Film} /> */}
-      <Login />
+      <Header />
+      <Scop Film={Film} />
+      {/* <Login /> */}
     </div>
   );
 }
