@@ -8,12 +8,11 @@ import Login from "./Pages/Login.jsx";
 import axios from "axios";
 
 function App(props) {
-  const [Film, setFilm] = useState(String);
-  const [searchFilms, setSearchFilms] = useState(String);
-  const [IDFilmSearch, setIDFilmSearch] = useState(586);
+  const [Film, setFilm] = useState();
+  const [searchFilms, setSearchFilms] = useState([]);
 
   const getSearch = (searchBt) => {
-    setSearchFilms(searchBt);
+    setFilm(searchBt);
     /* 
     console.log(searchBtn); */
   };
@@ -22,9 +21,9 @@ function App(props) {
     apiSearc
       .get(
         "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&query=" +
-          searchFilms
+          Film
       )
-      .then((response) => setSearchFilms(response.data.results[0]))
+      .then((response) => setSearchFilms(response.data.results))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
@@ -32,8 +31,8 @@ function App(props) {
 
   useEffect(() => {
     api
-      .get(IDFilmSearch + "?api_key=e68b6243bee88c674c06b447bb15c094")
-      .then((response) => setFilm(response.data))
+      .get("upcoming?page=1&api_key=e68b6243bee88c674c06b447bb15c094")
+      .then((response) => setSearchFilms(response.data.results))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
       });
