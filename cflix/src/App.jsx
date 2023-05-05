@@ -20,7 +20,7 @@ function App(props) {
   const clkSearch = () => {
     apiSearc
       .get(
-        "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&query=" +
+        "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&language=pt-BR&query=" +
           Film
       )
       .then((response) => setSearchFilms(response.data.results))
@@ -31,7 +31,9 @@ function App(props) {
 
   useEffect(() => {
     api
-      .get("upcoming?page=1&api_key=e68b6243bee88c674c06b447bb15c094")
+      .get(
+        "upcoming?page=1&api_key=e68b6243bee88c674c06b447bb15c094&language=pt-BR"
+      )
       .then((response) => setSearchFilms(response.data.results))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
